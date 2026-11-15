@@ -10,9 +10,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        login: 'login.html',
-        register: 'register.html',
-        userManagement: 'userManagement.html',
+        login: 'src/login.html',
+        register: 'src/register.html',
+        userManagement: 'src/userManagement.html',
       },
     },
   },
