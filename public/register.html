@@ -11,7 +11,7 @@
   <main class="w-full max-w-sm bg-white p-8 rounded-xl shadow-lg">
     <h1 class="mb-6 text-2xl font-bold text-center">Create account</h1>
 
-    <form action="/register" method="post" class="space-y-4">
+    <form id="registerForm" class="space-y-4">
       <div>
         <label for="name" class="block mb-1.5 text-sm font-semibold">Full name</label>
         <input type="text" id="name" name="name" required minlength="2" autocomplete="name"
@@ -58,9 +58,13 @@
       </button>
     </form>
 
+    <p id="message" class="mt-4 text-sm text-center" role="alert"></p>
+
     <p class="mt-4 text-sm text-center">Already registered?
       <a href="login.html" class="text-blue-600 hover:underline">Log in</a>
     </p>
   </main>
+
+  <script src="/js/register.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
   <main class="login-card">
     <h1>Log in</h1>
 
-    <form action="/login" method="post">
+    <form id="loginForm">
       <div class="mb-4">
         <label for="email">Email</label>
         <!-- HTML validators: required, type=email -->
@@ -54,7 +54,11 @@
       <button type="submit">Log in</button>
     </form>
 
+    <p id="message" class="mt-4 text-sm text-center" role="alert"></p>
+
     <p class="link">No account? <a href="register.html" class="text-blue-600 hover:underline">Register</a></p>
   </main>
+
+  <script src="/js/login.js"></script>
 </body>
 </html>

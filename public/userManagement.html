@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="/css/tailwind.css">
+</head>
+<body class="min-h-screen bg-gray-100 font-sans p-4 sm:p-8">
+  <main class="max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+    <div class="flex items-center justify-between mb-6">
+      <h1 id="greeting" class="text-2xl font-bold">Welcome</h1>
+      <button id="logout" type="button"
+              class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 text-sm font-semibold transition">
+        Log out
+      </button>
+    </div>
+
+    <h2 class="mb-3 text-lg font-semibold">Registered users</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-gray-50 text-gray-600">
+          <tr>
+            <th class="px-4 py-2">#</th>
+            <th class="px-4 py-2">Name</th>
+            <th class="px-4 py-2">Email</th>
+            <th class="px-4 py-2">Role</th>
+          </tr>
+        </thead>
+        <tbody id="usersBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="/js/userManagement.js"></script>
+</body>
+</html>
