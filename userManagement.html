@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-white text-slate-900 dark:bg-black dark:text-slate-100">
+    <div
+      id="app"
+      class="mx-auto flex min-h-screen max-w-250 flex-col gap-2 bg-slate-200 p-2 dark:bg-slate-800"
+    >
+      <header
+        class="relative flex items-center justify-between bg-slate-300 p-4 dark:bg-slate-700"
+      >
+        <div class="flex items-center gap-4">
+          <button
+            id="btnMenu"
+            type="button"
+            class="rounded border border-slate-700 px-3 py-1 lg:hidden dark:border-slate-300"
+          >
+            Menu
+          </button>
+          <nav
+            id="popUpMenu"
+            class="absolute top-full left-0 z-10 hidden w-full bg-slate-300 p-4 shadow-lg lg:static lg:flex lg:w-auto lg:gap-4 lg:bg-transparent lg:p-0 lg:shadow-none dark:bg-slate-700 lg:dark:bg-transparent"
+          >
+            <a href="index.html" class="mr-2 block text-xl font-bold hover:underline">Home</a>
+            <a href="login.html" class="mr-2 block text-xl font-bold hover:underline">Login</a>
+            <a href="register.html" class="mr-2 block text-xl font-bold hover:underline">Register</a>
+            <a href="userManagement.html" class="mr-2 block text-xl font-bold hover:underline">Users</a>
+          </nav>
+        </div>
+        <button
+          id="btnTheme"
+          type="button"
+          class="rounded border border-slate-700 px-3 py-1 dark:border-slate-300"
+        >
+          Light
+        </button>
+      </header>
+
+      <main class="grow bg-slate-300 p-4 dark:bg-slate-700">
+        <section class="rounded-xl bg-white p-6 shadow-lg sm:p-8 dark:bg-slate-800">
+          <div class="mb-6 flex items-center justify-between">
+            <h1 id="greeting" class="text-3xl font-bold">Welcome</h1>
+            <button
+              id="logout"
+              type="button"
+              class="rounded-lg bg-slate-200 px-4 py-2 text-sm font-semibold transition hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600"
+            >
+              Log out
+            </button>
+          </div>
+
+          <h2 class="mb-3 text-lg font-semibold">Registered users</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-sm">
+              <thead class="bg-slate-50 text-slate-600 dark:bg-slate-700 dark:text-slate-300">
+                <tr>
+                  <th class="px-4 py-2">#</th>
+                  <th class="px-4 py-2">Name</th>
+                  <th class="px-4 py-2">Email</th>
+                  <th class="px-4 py-2">Role</th>
+                </tr>
+              </thead>
+              <tbody id="usersBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-slate-300 p-4 text-center dark:bg-slate-700">Tirgul 2 &copy; 2026</footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/userManagement.js"></script>
+  </body>
+</html>

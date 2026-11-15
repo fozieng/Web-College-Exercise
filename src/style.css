@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Lets the theme button switch dark mode manually: dark: utilities apply when <html> has class "dark". */
+@custom-variant dark (&:where(.dark, .dark *));

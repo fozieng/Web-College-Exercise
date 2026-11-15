@@ -13,7 +13,7 @@ if (!loggedInUser || loggedInUser.role !== 'admin') {
 
   users.forEach((user, index) => {
     const row = document.createElement('tr');
-    row.className = 'border-t border-gray-200';
+    row.className = 'border-t border-slate-200 dark:border-slate-700';
 
     // Build cells with textContent so user input is never parsed as HTML.
     [index + 1, user.name, user.email, user.role].forEach((value) => {
