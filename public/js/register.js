@@ -35,7 +35,7 @@ form.addEventListener('submit', (event) => {
   // Task A: the first registered user is the admin, everyone after is a regular user.
   const role = users.length === 0 ? 'admin' : 'user';
 
-  users.push({ name, email, password, role });
+  users.push({ name, email, password, role }); 
   localStorage.setItem('users', JSON.stringify(users));
 
   showMessage(`Registered as ${role}. Redirecting to login...`, false);
