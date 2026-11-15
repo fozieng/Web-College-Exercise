@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
 
-  <!-- Step 1: built-in CSS -->
-  <link rel="stylesheet" href="login.css">
-
-  <!-- Step 2: Tailwind CSS (used for validation feedback) -->
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <!-- Step 2: Tailwind CSS (built by the Tailwind CLI, used for validation feedback) -->
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <!-- Step 1: built-in CSS (loaded after Tailwind so it can sit on top of the reset) -->
+  <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
   <main class="login-card">
     <h1>Log in</h1>
 
-    <form action="#" method="post">
+    <form action="/login" method="post">
       <div class="mb-4">
         <label for="email">Email</label>
         <!-- HTML validators: required, type=email -->

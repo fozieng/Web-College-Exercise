@@ -18,21 +18,21 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.login-card h1 {
+:where(.login-card) h1 {
   margin: 0 0 24px;
   font-size: 1.5rem;
   text-align: center;
 }
 
-.login-card label {
+:where(.login-card) label {
   display: block;
   margin-bottom: 6px;
   font-size: 0.875rem;
   font-weight: 600;
 }
 
-.login-card input[type="email"],
-.login-card input[type="password"] {
+:where(.login-card) input[type="email"],
+:where(.login-card) input[type="password"] {
   box-sizing: border-box;
   width: 100%;
   padding: 10px 12px;
@@ -41,7 +41,7 @@ body {
   font-size: 1rem;
 }
 
-.login-card button {
+:where(.login-card) button {
   width: 100%;
   padding: 11px;
   border: 0;
@@ -53,11 +53,11 @@ body {
   cursor: pointer;
 }
 
-.login-card button:hover {
+:where(.login-card) button:hover {
   background: #1d4ed8;
 }
 
-.login-card .link {
+:where(.login-card) .link {
   margin: 16px 0 0;
   text-align: center;
   font-size: 0.875rem;
